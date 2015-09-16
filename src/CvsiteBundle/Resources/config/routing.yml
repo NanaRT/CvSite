@@ -1,0 +1,3 @@
+cvsite:
+    path:     /
+    defaults: { _controller: CvsiteBundle:Default:index }

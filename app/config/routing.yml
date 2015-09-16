@@ -1,0 +1,3 @@
+cvsite:
+    resource: "@CvsiteBundle/Resources/config/routing.yml"
+    prefix:   /
