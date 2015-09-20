@@ -13,12 +13,16 @@
             "type": "package",
             "package": {
                 "name": "jquery/jquery",
-                "version": "1.9.1",
+                "version": "1.11.1",
                 "dist": {
-                    "url": "http://code.jquery.com/jquery-1.9.1.js",
+                    "url": "http://code.jquery.com/jquery-1.11.1.js",
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:cbekir/lessphp.git"
         }
     ],
     "require": {
@@ -34,8 +38,8 @@
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "symfony/framework-bundle": "^2.7",
-        "braincrafted/bootstrap-bundle": "dev-master",
-        "jquery/jquery": "1.9.*"
+        "leafo/lessphp": "0.3.9",
+        "jquery/jquery":  "1.11.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

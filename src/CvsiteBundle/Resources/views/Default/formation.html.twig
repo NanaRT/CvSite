@@ -1,0 +1,156 @@
+{% extends 'CvsiteBundle:Default:index.html.twig' %}
+{% block head %}
+	<title>Formations & Compétences</title>
+{% endblock %}
+{% block body %}
+<div class="body">
+	<h1>Compétences</h1>
+		<table class="table table-hover">
+	 		<tr>
+		    <th class="tg-031e">Type de compétences</th>
+		    <th class="tg-031e">Logiciels/langages</th>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Editeur de texte</td>
+		    <td class="tg-031e">
+		    	<img src="{{ asset('bundles/cvsite/images/logos/notepad.png') }}" alt="Notepad++" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/phpstorm.png') }}" alt="PhpStorm" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/aptana.png') }}" alt="Aptana" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/visual_studio.png') }}" alt="Visual Studio" class="img-thumbnail"/> 
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Web</td>
+		    <td class="tg-031e">
+		    	<img src="{{ asset('bundles/cvsite/images/logos/html.png') }}" alt="HTML" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/css.png') }}" alt="CSS" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/php.png') }}" alt="PHP" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/js.png') }}" alt="JavaScript" class="img-thumbnail"/>
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Framework</td>
+		    <td class="tg-031e">
+		    	<img src="{{ asset('bundles/cvsite/images/logos/symfony.png') }}" alt="Symfony" class="img-thumbnail"/> 
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Base de données</td>
+		    <td class="tg-031e">
+		    	<img src="{{ asset('bundles/cvsite/images/logos/dbeaver.png') }}" alt="DBeaver" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/MySQLWorkbench.png') }}" alt="MySQL Workbench" class="img-thumbnail"/>
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Langages orientés objets</td>
+		    <td class="tg-031e">
+		    	<img src="{{ asset('bundles/cvsite/images/logos/python.png') }}" alt="Python" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/c.png') }}" alt="C" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/csharp.png') }}" alt="CSharp" class="img-thumbnail"/> 
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Gestion de Version</td>
+		    <td class="tg-031e">
+		    	<abbr title="Retrouvez le code du site sur GitHub">
+		    		<a href="https://github.com/NanaRT/CvSite">
+		    			<img src="{{ asset('bundles/cvsite/images/logos/GitHub.png') }}" alt="GitHub" class="img-thumbnail"/> 
+		    		</a>
+		    	</abbr>
+		    	<img src="{{ asset('bundles/cvsite/images/logos/git.png') }}" alt="git" class="img-thumbnail"/> 
+		    	<img src="{{ asset('bundles/cvsite/images/logos/sourcetree.png') }}" alt="Source Tree" class="img-thumbnail"/> 
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Serveur</td>
+		    <td class="tg-031e">
+				<img src="{{ asset('bundles/cvsite/images/logos/Wamp.png') }}" alt="WAMP" class="img-thumbnail"/> 
+			</td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Systèmes d'exploitation utilisés</td>
+		    <td class="tg-031e">
+				<img src="{{ asset('bundles/cvsite/images/logos/windows7.png') }}" alt="Windows 7" class="img-thumbnail"/> 
+				<img src="{{ asset('bundles/cvsite/images/logos/windows8.png') }}" alt="Windows 8" class="img-thumbnail"/> 
+				<img src="{{ asset('bundles/cvsite/images/logos/windows10.png') }}" alt="Windows 10" class="img-thumbnail"/> 
+			</td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">Langues parlées niveau bilingue</td>
+		    <td class="tg-031e">
+				<img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="Français" class="img-thumbnail"/> 
+				<img src="{{ asset('bundles/cvsite/images/english.png') }}" alt="Anglais" class="img-thumbnail"/> 
+			</td>
+		  </tr>
+	</table>
+
+	<h1>Formation</h1>
+		<table class="table table-hover">
+		  <tr>
+		    <th class="tg-031e">Années</th>
+		    <th class="tg-031e">Centre formation</th>
+		    <th class="tg-031e">Lieu</th>
+		    <th class="tg-031e">Niveau d'étude</th>
+		    <th class="tg-031e">Diplôme obtenu</th>
+		    <th class="tg-031e">Mention obtenue</th>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">2015 - 2016</td>
+		    <td class="tg-031e">Université de Bordeaux, collège des sciences et technique</td>
+		    <td class="tg-031e">Talence, FRANCE</td>
+		    <td class="tg-031e">Bac+2</td>
+		    <td class="tg-031e"></td>
+		    <td class="tg-031e"></td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">2014 - 2015</td>
+		    <td class="tg-031e">EPSI</td>
+		    <td class="tg-031e">Bordeaux, FRANCE</td>
+		    <td class="tg-031e">Bac+1</td>
+		    <td class="tg-031e"></td>
+		    <td class="tg-031e"></td>
+		  </tr>
+		  <tr>
+		    <td class="tg-031e">2010 - 2012</td>
+		    <td class="tg-031e">Lycée Sainte Marie Bastide</td>
+		    <td class="tg-031e">Bordeaux, FRANCE</td>
+		    <td class="tg-031e">Baccalauréat</td>
+		    <td class="tg-031e">Baccalauréat Littéraire</td>
+		    <td class="tg-031e">Bien</td>
+		  </tr>
+		</table>
+		
+	<h1>Bureautique</h1>
+	<table class="table table-hover">
+	  <tr>
+	    <th class="tg-031e">Type de compétence</th>
+	    <th class="tg-031e">Logiciels maitrisés/étudiés</th>
+	  </tr>
+	  <tr>
+	    <td class="tg-031e">Traitement de texte</td>
+	    <td class="tg-031e">
+			<img src="{{ asset('bundles/cvsite/images/bureautique/word.png') }}" alt="Word" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/libreoffice.png') }}" alt="Libre Office" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/openoffice.png') }}" alt="Open Office" class="img-thumbnail"/> 
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="tg-031e">Traitement image</td>
+	    <td class="tg-031e">
+			<img src="{{ asset('bundles/cvsite/images/bureautique/paint.png') }}" alt="Paint.net" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/picasa.png') }}" alt="Picasa" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/gimp.png') }}" alt="Gimp" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/photoshop.png') }}" alt="Photoshop" class="img-thumbnail"/> 
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="tg-031e">Traitement vidéo</td>
+	    <td class="tg-031e">
+			<img src="{{ asset('bundles/cvsite/images/bureautique/powerdirector.png') }}" alt="Power Director" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/windowsmoviemaker.png') }}" alt="Windows Movie Maker" class="img-thumbnail"/> 
+			<img src="{{ asset('bundles/cvsite/images/bureautique/sonyvegaspro.png') }}" alt="Sony Vegas Pro" class="img-thumbnail"/> 
+		</td>
+	  </tr>
+	</table>
+</div>
+{%endblock%}

@@ -1,3 +1,19 @@
 cvsite:
     path:     /
-    defaults: { _controller: CvsiteBundle:Default:index }
+    defaults: { _controller: CvsiteBundle:Default:accueil }
+    
+telechargementCvPdf:
+    pattern:  /telechargementCvPdf
+    defaults: { _controller: CvsiteBundle:Default:telechargementCvPdf }
+    
+formation:
+    pattern:  /formation
+    defaults: {_controller: CvsiteBundle:Default:formation}
+    
+professionel:
+    pattern:  /professionel
+    defaults: {_controller: CvsiteBundle:Default:professionel}
+    
+projets:
+    pattern:  /projets
+    defaults: {_controller: CvsiteBundle:Default:projets}

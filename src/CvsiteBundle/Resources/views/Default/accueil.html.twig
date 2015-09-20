@@ -1,0 +1,15 @@
+{% extends 'CvsiteBundle:Default:index.html.twig' %}
+{% block head %}
+	<title>Accueil</title>
+{% endblock %}
+{% block body %}
+	<div class="container-fluid">
+		<div class="downloadcv">
+			<a href="{{ path('telechargementCvPdf') }}">
+				<button type="button" class="cv">
+					<img src="{{ asset('bundles/cvsite/images/dl.png') }}"/>Télécharger CV
+				</button> 
+			</a>
+		</div>
+	</div>
+{%endblock%}
