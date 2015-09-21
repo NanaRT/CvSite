@@ -1,0 +1,28 @@
+CvsiteBundle\Entity\UploadedFileEntity:
+    type: mappedSuperclass
+    gedmo:
+        uploadable:
+            allowOverwrite: false
+            appendNumber: true
+            pathMethod: getUploadPath
+            filenameGenerator: SHA1
+    fields:
+        uploadPath:
+            type: string
+            length: 255
+            nullable: true
+            column: upload_path
+        filePath:
+            type: string
+            length: 255
+            nullable: true
+            column: file_path
+            gedmo:
+                - uploadableFilePath
+        fileName:
+            type: string
+            length: 255
+            nullable: true
+            column: file_name
+            gedmo:
+                - uploadableFileName

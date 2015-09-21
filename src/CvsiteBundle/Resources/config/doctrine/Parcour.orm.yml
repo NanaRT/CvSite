@@ -1,0 +1,18 @@
+CvsiteBundle\Entity\Parcour:
+  type: mappedSuperclass
+  fields:
+    yearbegin:
+      type: date
+    yearend:
+      type: date
+    locality:
+      type: string
+      length: 255
+      
+  manyToOne:
+    category:
+      targetEntity: Category
+      cascade:                  [ remove, persist ]
+      joinColumn:
+        name: category_id
+        referencedColumnName: id

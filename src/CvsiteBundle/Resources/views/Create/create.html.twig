@@ -1,0 +1,32 @@
+{% extends 'CvsiteBundle:Default:index.html.twig' %}
+{% block head %}
+	<title>Créer</title>
+{% endblock %}
+{% block body %}
+
+<div class="create">
+	<a href="{{path('article')}}">
+	<h3>Créer article</h3>
+	</a>
+</div>
+<div class="create">
+	<a href="{{path('education')}}">
+	<h3>Mettre a jour parcours éducatif</h3>
+	</a>
+</div>
+<div class="create">
+	<a href="{{path('professional')}}">
+	<h3>Mettre a jour parcours professionel</h3>
+	</a>
+</div>
+<div class="create">
+	<a href="{{path('skill')}}">
+	<h3>Mettre à jour compétences</h3>
+	</a>
+</div>
+<div class="create">
+	<a href="{{path('category')}}">
+	<h3>Categorie</h3>
+	</a>
+</div>
+{% endblock %}

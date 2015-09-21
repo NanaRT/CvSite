@@ -1,0 +1,13 @@
+CvsiteBundle\Entity\Category:
+  type: entity
+  repositoryClass: ArticleRepository
+  table: category
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    nom:
+      type: string
+      length: 255

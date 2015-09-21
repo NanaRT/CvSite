@@ -1,0 +1,37 @@
+CvsiteBundle\Entity\Article:
+  type: entity
+  repositoryClass: ArticleRepository
+  table: article
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    titre:
+      type: string
+      length: 255
+    contenu:
+      type: string
+      length: 1000
+    date:
+      type: date
+      
+  manyToMany:
+    image:
+      targetEntity: Image
+      joinTable:
+        name: article_image
+        joinColumns:
+          article_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          image_id:
+            referencedColumnName: id
+  manyToOne:
+    category:
+      targetEntity: Category
+      cascade:                  [ remove, persist ]
+      joinColumn:
+        name: category_id
+        referencedColumnName: id

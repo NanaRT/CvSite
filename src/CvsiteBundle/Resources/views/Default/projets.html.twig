@@ -4,16 +4,22 @@
 {% endblock %}
 {% block body %}
 <div class="projets">
+	<a href="{{path('projetsinfo')}}">
 	<h1>Projets Informatiques</h1>
 	<img src="{{ asset('bundles/cvsite/images/projets/bgf/wallpaper.jpg') }}" alt="Projets Informatiques" class="img-thumbnail"/>
+	</a>
 </div>
 <div class="projets">
+	<a  href="{{path('lansalon')}}">
 	<h1>Lans & Salons</h1>
 	<img src="{{ asset('bundles/cvsite/images/projets/logobgf.jpg') }}" alt="Lans & Salons" class="img-thumbnail"/>
+	</a>
 </div>
 <div class="projets">
+	<a  href="{{path('vieassociative')}}">
 	<h1>Vie associative</h1>
 	<img src="{{ asset('bundles/cvsite/images/projets/ab2g.jpg') }}" alt="Vie associative" class="img-thumbnail"/>
+	</a>
 </div>
 
 {%endblock%}

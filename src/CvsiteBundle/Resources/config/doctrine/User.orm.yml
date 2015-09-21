@@ -1,0 +1,46 @@
+# Mandatory to use bundle FOSUser
+CvsiteBundle\Entity\User:
+    type: entity
+    table: users
+    id:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id
+            generator:
+                strategy: IDENTITY
+    fields:
+#        username:
+#            type: string
+#            length: 120
+#            fixed: false
+#            nullable: false
+#            unique: true
+#        salt:
+#            type: string
+#            length: 50
+#            fixed: false
+#            nullable: false
+#        password:
+#            type: string
+#            length: 120
+#            fixed: false
+#            nullable: false
+#        role:
+#            type: string
+#            length: 255
+#            fixed: false
+#            nullable: false
+#        isActive:
+#            type: boolean
+#            unsigned: false
+#            nullable: false
+#            column: is_active
+#        creationDatetime:
+#            type: date
+#            column: creation_datetime
+#            gedmo:
+#                timestampable:
+#                    on: create

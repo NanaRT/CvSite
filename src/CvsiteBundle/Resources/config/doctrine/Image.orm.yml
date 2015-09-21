@@ -1,0 +1,8 @@
+CvsiteBundle\Entity\Image:
+    type: entity
+    table: image
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO

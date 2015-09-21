@@ -1,0 +1,22 @@
+CvsiteBundle\Entity\Education:
+  type: entity
+  table: education
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    formationcenter:
+      type: string
+      length: 255
+    level:
+      type: string
+      length: 255
+    diploma:
+      type: string
+      length: 255
+    mention:
+      type: string
+      length: 255
+      

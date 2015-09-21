@@ -39,4 +39,19 @@ class DefaultController extends Controller
     {
         return $this->render('CvsiteBundle:Default:projets.html.twig');
     }
+	
+    public function projetsinfoAction()
+    {
+        return $this->render('CvsiteBundle:projets:projetsinfo.html.twig');
+    }
+	
+    public function lansalonAction()
+    {
+        return $this->render('CvsiteBundle:projets:lansalon.html.twig');
+    }
+	
+    public function vieassociativeAction()
+    {
+        return $this->render('CvsiteBundle:projets:vieassociative.html.twig');
+    }
 }

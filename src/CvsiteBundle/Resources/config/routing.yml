@@ -14,6 +14,48 @@ professionel:
     pattern:  /professionel
     defaults: {_controller: CvsiteBundle:Default:professionel}
     
+#Projet
 projets:
     pattern:  /projets
     defaults: {_controller: CvsiteBundle:Default:projets}
+    
+projetsinfo:
+    pattern:  /projets/projets_informatique
+    defaults: {_controller: CvsiteBundle:Projets:projetsinfo}
+    
+lansalon:
+    pattern:  /projets/lans_salons
+    defaults: {_controller: CvsiteBundle:Projets:lansalon}
+    
+vieassociative:
+    pattern:  /projets/vie_associative
+    defaults: {_controller: CvsiteBundle:Projets:vieassociative}
+    
+#Create
+create:
+    pattern:  /create
+    defaults: {_controller: CvsiteBundle:Create:create}
+    
+category:
+    pattern:  /create/category
+    defaults: {_controller: CvsiteBundle:Create:category}
+    
+article:
+    pattern:  /create/article
+    defaults: {_controller: CvsiteBundle:Create:article}
+    
+education:
+    pattern:  /create/education
+    defaults: {_controller: CvsiteBundle:Create:education}
+    
+professional:
+    pattern:  /create/professional
+    defaults: {_controller: CvsiteBundle:Create:professional}
+    
+skill:
+    pattern:  /create/skill
+    defaults: {_controller: CvsiteBundle:Create:skill}  
+    
+postCategory:
+    pattern:  /create/send
+    defaults: {_controller: CvsiteBundle:Post:postCategory}  

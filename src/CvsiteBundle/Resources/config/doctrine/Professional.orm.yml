@@ -1,0 +1,19 @@
+CvsiteBundle\Entity\Professional:
+  type: entity
+  table: professional
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    typecontract:
+      type: string
+      length: 255
+    name:
+      type: string
+      length: 255
+    company:
+      type: string
+      length: 255
+      

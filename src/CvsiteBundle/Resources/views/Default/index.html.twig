@@ -16,29 +16,29 @@
 	
     <body>
 	    <div class="top">
-			<div class="col-md-3">
+		    <div class="topping">
 				<div class="image">
 					<img src="{{ asset('bundles/cvsite/images/photos/alana.jpg') }}" alt="Picture Alana TAYLOR" class="img-thumbnail"/>
 				</div>
 			</div>
-			<div class="col-md-3">
+		    <div class="topping">
 				<div class="adress">
 					<address>
-						 <strong>Alana TAYLOR</strong><br/>
+						 Alana TAYLOR<br/>
 						 Bordeaux, FRANCE<br/> 
 						 <abbr title="Téléphone">T:</abbr> +33 6 68 21 24 42<br/> 
 						 <abbr title="Mail">M:</abbr> alanataylor@hotmail.fr<br/> 
 					</address>
 				</div>
 			</div>
-			<div class="col-md-3">
+		    <div class="topping">
 				<div class="nationalite">
 					<p>Double nationalité : franco-néo-zélandaise</p>
 					<img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="France" class="img-thumbnail"/>
 					<img src="{{ asset('bundles/cvsite/images/new_zealand.png') }}" alt="Nouvelle Zélande" class="img-thumbnail"/>
 				</div>
 			</div>
-			<div class="col-md-3">
+	    	<div class="topping">
 				<div class="external_links">
 					<p>Autres liens</p>
 					<a href="https://www.linkedin.com/profile/view?id=AAIAABfovwwBgdhyF6H0qVBOk3VJP4fS2FBUN6U&trk=nav_responsive_tab_profile">
@@ -52,30 +52,34 @@
 				</div>
 			</div>
 		</div>
-			
+		
 		<div id='cssmenu'>
 			<ul id="menu">
 				<li id='active'><a href='{{path('cvsite')}}'><span> <img src="{{ asset('bundles/cvsite/images/menu/home.png') }}"/> Accueil</span></a>
 				</li>
 			   <li id='active'><a href='{{path('formation')}}'><span> <img src="{{ asset('bundles/cvsite/images/menu/scholar.png') }}"/> Formation & compétences</span></a>
 			       <ul>
-		               <li><a href='{{path('formation')}}'><span>Formation</span></a></li>
-		               <li><a href='{{path('formation')}}'><span>Compétences acquises</span></a></li>
-		               <li><a href='{{path('formation')}}'><span>Compétences en cours d'acquisition</span></a></li>
+		               <li><a href='{{path('formation')}}#Compétences'><span>Compétences</span></a></li>
+		               <li><a href='{{path('formation')}}#Formation'><span>Formation</span></a></li>
+		               <li><a href='{{path('formation')}}#Bureautique'><span>Bureautique</span></a></li>
+		               <li><a href='{{path('formation')}}#Loisirs'><span>Loisirs</span></a></li>
 			       </ul>
 			   </li>
 			   <li id='active'><a href='{{path('professionel')}}'><span> <img src="{{ asset('bundles/cvsite/images/menu/work.png') }}"/> Expérience professionelle</span></a>
 			   </li>
 			   <li id='active'><a href='{{path('projets')}}'><span> <img src="{{ asset('bundles/cvsite/images/menu/projet.png') }}"/> Projets</span></a>
 			       <ul>
-		               <li><a href='{{path('projets')}}'><span>Informatique</span></a></li>
-		               <li><a href='{{path('projets')}}'><span>Lans&Salons</span></a></li>
-		               <li><a href='{{path('projets')}}'><span>Vie associative</span></a></li>
+		               <li><a href='{{path('projetsinfo')}}'><span>Informatique</span></a></li>
+		               <li><a href='{{path('lansalon')}}'><span>Lans&Salons</span></a></li>
+		               <li><a href='{{path('vieassociative')}}'><span>Vie associative</span></a></li>
 			       </ul>
 			   </li>
 			</ul>
 		</div>
 		
+		
+		
+        {% block menu %}{% endblock %}
         {% block body %}{% endblock %}
         
 		<div class="footer">
