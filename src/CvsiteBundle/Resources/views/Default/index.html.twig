@@ -1,105 +1,976 @@
 <!DOCTYPE html>
-<html>
-<header>Accueil</header>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alana Rose TAYLOR</title>
+
+	<!-- Load fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<!-- Load css styles -->
+	<link rel="stylesheet" href="{{ asset('bundles/cvsite/css/bootstrap.css') }}" />
+	<link rel="stylesheet" href="{{ asset('bundles/cvsite/css/font-awesome.css') }}" />
+	<link rel="stylesheet" href="{{ asset('bundles/cvsite/css/style.css') }}" />
+</head>
 <body>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-circle" /> 
-			<address>
-				 <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
-			</address>
+	<div class="jumbotron home home-fullscreen" id="home">
+		<div class="mask"></div>
+		<a href="#" class="logo">
+			<img src="{{ asset('bundles/cvsite/img/logo.png') }}" alt="Moderno - Theme by GraphBerry.com">
+		</a>
+		<a href="#menu" class="menu-toggle" id="nav-expander"><i class="fa fa-bars"></i></a>
+		<!-- Offsite navigation -->
+		<nav class="menu">
+			<a href="#" class="close"><i class="fa fa-close"></i></a>
+			<h3>Menu</h3>
+			<ul class="nav">
+				<li class="active"><a data-scroll href="#competences">Compétences</a></li>
+				<li><a data-scroll href="#formation">Formation</a></li>
+				<li><a data-scroll href="#experiencepro">Expérience professionelle</a></li>
+				<li><a data-scroll href="#projets">Projets</a></li>
+				<li><a data-scroll href="#bureautique">Bureautique</a></li>
+				<li><a data-scroll href="#loisirs">Loisirs</a></li>
+				<li><a data-scroll href="#contact">Contact</a></li>
+			</ul>
+			<ul class="social-icons">
+				<li><a href="https://www.linkedin.com/in/alanarosetaylor"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/NanaRT"><i class="fa fa-github"></i></a></li>
+			</ul>
+			<ul class="footer">
+				<li>Alana TAYLOR</li>
+				<li>Bordeaux, FRANCE<br/> </li>
+				<li><abbr title="Téléphone">T:</abbr> +33 6 68 21 24 42<br/> </li>
+				<li><abbr title="Mail">M:</abbr> alanataylor@hotmail.fr<br/></li>
+				<br><br>
+				<li>Double nationalité : franco-néo-zélandaise</li>
+				<li><img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="France" class="img-thumbnail"/>     
+				<img src="{{ asset('bundles/cvsite/images/new_zealand.png') }}" alt="Nouvelle Zélande" class="img-thumbnail"/></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="header-info">
+				<h1>Alana Rose TAYLOR</h1>
+				<br><h2>Developpeuse web</2>
+				<br><p>Etudiante en Licence 2 à l'Université de Bordeaux en informatique
+				</p><br>
+				<a href="{{ path('telechargementCvPdf') }}" class="btn btn-primary"><i class="fa fa-download"></i>Télécharger version papier</a>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12">
+	<!-- Services section start -->
+	<section id="services">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="carousel slide" id="carousel-21362">
-						<ol class="carousel-indicators">
-							<li data-slide-to="0" data-target="#carousel-21362">
-							</li>
-							<li data-slide-to="1" data-target="#carousel-21362">
-							</li>
-							<li data-slide-to="2" data-target="#carousel-21362" class="active">
-							</li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item">
-								<img alt="Carousel Bootstrap First" src="http://lorempixel.com/output/sports-q-c-1600-500-1.jpg" />
-								<div class="carousel-caption">
-									<h4>
-										First Thumbnail label
-									</h4>
-									<p>
-										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-									</p>
-								</div>
-							</div>
-							<div class="item">
-								<img alt="Carousel Bootstrap Second" src="http://lorempixel.com/output/sports-q-c-1600-500-2.jpg" />
-								<div class="carousel-caption">
-									<h4>
-										Second Thumbnail label
-									</h4>
-									<p>
-										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-									</p>
-								</div>
-							</div>
-							<div class="item active">
-								<img alt="Carousel Bootstrap Third" src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg" />
-								<div class="carousel-caption">
-									<h4>
-										Third Thumbnail label
-									</h4>
-									<p>
-										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-									</p>
-								</div>
-							</div>
-						</div> <a class="left carousel-control" href="#carousel-21362" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-21362" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-					</div> 
-					<button type="button" class="btn btn-default btn-block">
-						Default
-					</button> 
-					<button type="button" class="btn btn-default btn-block">
-						Default
-					</button>
-					<div class="btn-group">
-						 
-						<button class="btn btn-default">
-							Action
-						</button> 
-						<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">Action</a>
-							</li>
-							<li class="disabled">
-								<a href="#">Another action</a>
-							</li>
-							<li class="divider">
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>
-						</ul>
+				<div class="col-md-3">
+					<div class="service-item">
+						<div class="icon">
+							<a href='#compétences'>
+								<i class="fa fa-list"></i>
+							</a>
+						</div>
+						<h3>Compétences</h3>
+						<p>Liste de compétences acquises ou en cours d'acquisition</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="service-item">
+						<div class="icon">
+							<a href='#formation'>
+								<i class="fa fa-book"></i>
+							</a>
+						</div>
+						<h3>Formation suivie</h3>
+						<p> Liste des écoles et cursus suivis</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="service-item">
+						<div class="icon">
+							<a href='#professionel'>
+								<i class="fa fa-gear"></i>
+							</a>
+						</div>
+						<h3>Experience professionelle</h3>
+						<p>Liste des experiences professionelles</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="service-item">
+						<div class="icon">
+							<a href='#projets'>
+								<i class="fa fa-life-ring"></i>
+							</a>
+						</div>
+						<h3>Projets</h3>
+						<p>Liste et description de tous les projets effectués ou en cours, informatique ou associatifs</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			 
-			<address>
-				 <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890
-			</address>
+	</section>
+	<!-- Services section end -->
+	<!-- Portfolio section start -->
+	<section id="compétences" class="darker">
+		<div class="container">
+			<h1 id="Compétences">Compétences</h1>
+				<table class="table table-hover">
+			 		<tr>
+				    <th class="tg-031e">Type de compétences</th>
+				    <th class="tg-031e">Logiciels/langages</th>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Editeur de texte</td>
+				    <td class="tg-031e">
+				    	<abbr title="Notepad">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/notepad.png') }}" alt="Notepad++" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="PhpStorm">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/phpstorm.png') }}" alt="PhpStorm" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="Aptana">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/aptana.png') }}" alt="Aptana" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="Visual Studio">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/visual_studio.png') }}" alt="Visual Studio" class="img-thumbnail"/> 
+				    	</abbr>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Web</td>
+				    <td class="tg-031e">
+				    	<abbr title="HTML">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/html.png') }}" alt="HTML" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="CSS">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/css.png') }}" alt="CSS" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="PHP">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/php.png') }}" alt="PHP" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="JavaScript">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/js.png') }}" alt="JavaScript" class="img-thumbnail"/>
+				    	</abbr>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Framework</td>
+				    <td class="tg-031e">
+				    	<abbr title="Symfony">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/symfony.png') }}" alt="Symfony" class="img-thumbnail"/> 
+				    	</abbr>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Base de données</td>
+				    <td class="tg-031e">
+				    	<abbr title="DBeaver">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/dbeaver.png') }}" alt="DBeaver" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="MySQL Workbench">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/MySQLWorkbench.png') }}" alt="MySQL Workbench" class="img-thumbnail"/>
+				    	</abbr>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Langages orientés objets</td>
+				    <td class="tg-031e">
+				    	<abbr title="Python">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/python.png') }}" alt="Python" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="C">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/c.png') }}" alt="C" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="C#">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/csharp.png') }}" alt="CSharp" class="img-thumbnail"/> 
+				    	</abbr>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Gestion de Version</td>
+				    <td class="tg-031e">
+				    	<abbr title="Retrouvez le code du site sur GitHub">
+				    		<a href="https://github.com/NanaRT/CvSite">
+				    			<img src="{{ asset('bundles/cvsite/images/logos/GitHub.png') }}" alt="GitHub" class="img-thumbnail"/> 
+				    		</a>
+				    	</abbr>
+				    	<abbr title="Git">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/git.png') }}" alt="git" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="SourceTree">
+				    		<img src="{{ asset('bundles/cvsite/images/logos/sourcetree.png') }}" alt="Source Tree" class="img-thumbnail"/> 
+				    	</abbr>
+				    </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Serveur</td>
+				    <td class="tg-031e">
+				    	<abbr title="WAMP">
+							<img src="{{ asset('bundles/cvsite/images/logos/Wamp.png') }}" alt="WAMP" class="img-thumbnail"/> 
+						</abbr>
+					</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Systèmes d'exploitation utilisés</td>
+				    <td class="tg-031e">
+				    	<abbr title="Windows 7">
+							<img src="{{ asset('bundles/cvsite/images/logos/windows7.png') }}" alt="Windows 7" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="Windows 8">
+							<img src="{{ asset('bundles/cvsite/images/logos/windows8.png') }}" alt="Windows 8" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="Windows 10">
+							<img src="{{ asset('bundles/cvsite/images/logos/windows10.png') }}" alt="Windows 10" class="img-thumbnail"/> 
+						</abbr>
+					</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">Langues parlées niveau bilingue</td>
+				    <td class="tg-031e">
+				    	<abbr title="Français">
+							<img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="Français" class="img-thumbnail"/> 
+				    	</abbr>
+				    	<abbr title="Anglais">
+							<img src="{{ asset('bundles/cvsite/images/english.png') }}" alt="Anglais" class="img-thumbnail"/> 
+						</abbr>
+					</td>
+				  </tr>
+			</table>
 		</div>
-	</div>
-</div>
+	</section>
+	<section id="formation">
+		<div class="container">
+			<h1 id="formation">Formation</h1>
+			<table class="table table-hover">
+			  <tr>
+			    <th class="tg-031e">Années</th>
+			    <th class="tg-031e">Centre formation</th>
+			    <th class="tg-031e">Lieu</th>
+			    <th class="tg-031e">Niveau d'étude</th>
+			    <th class="tg-031e">Diplôme obtenu</th>
+			    <th class="tg-031e">Mention obtenue</th>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">2015 - 2016</td>
+			    <td class="tg-031e">Université de Bordeaux, collège des sciences et technique</td>
+			    <td class="tg-031e">Talence, FRANCE</td>
+			    <td class="tg-031e">Bac+2</td>
+			    <td class="tg-031e"></td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">2014 - 2015</td>
+			    <td class="tg-031e">EPSI</td>
+			    <td class="tg-031e">Bordeaux, FRANCE</td>
+			    <td class="tg-031e">Bac+1</td>
+			    <td class="tg-031e"></td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">2010 - 2012</td>
+			    <td class="tg-031e">Lycée Sainte Marie Bastide</td>
+			    <td class="tg-031e">Bordeaux, FRANCE</td>
+			    <td class="tg-031e">Baccalauréat</td>
+			    <td class="tg-031e">Baccalauréat Littéraire</td>
+			    <td class="tg-031e">Bien</td>
+			  </tr>
+			</table>
+		</div>
+	</section>	
+	<section id="professionel" class="darker">
+		<div class="container">
+			<h1 id="Professionel">Expérience professionelle</h1>
+			<br>
+			<table class="table table-hover">
+			  <tr>
+			    <th class="tg-031e">Années</th>
+			    <th class="tg-031e">Durée contrat</th>
+			    <th class="tg-031e">Type contrat</th>
+			    <th class="tg-031e">Emploi</th>
+			    <th class="tg-031e">Entreprise</th>
+			    <th class="tg-031e">Lieu</th>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">04/15 - 09/15</td>
+			    <td class="tg-031e">4 mois et demi</td>
+			    <td class="tg-031e">Stage</td>
+			    <td class="tg-031e">WebDeveloppeuse Symfony *</td>
+			    <td class="tg-031e"><a href="http://www.fabzat.com/fr/">Fabzat</a></td>
+			    <td class="tg-031e">Bègles, FRANCE</td>
+			  </tr>
+			  <tr>
+			  		* Création d’un outil de gestion de la production des commandes issues de différents canaux de distribution sur Symfony2 (avec le bundle Sonata Admin et l’API en RESTFul avec une authentification en OAuth V2)
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">08/14 - 09/14</td>
+			    <td class="tg-031e">1 mois et demi</td>
+			    <td class="tg-031e">CDD</td>
+			    <td class="tg-031e">Employée polyvalente</td>
+			    <td class="tg-031e"><a href="https://www.mcdonalds.fr/?gclid=CPSqofi2g8gCFUHnwgodL3gCiQ">Mac Donalds</a></td>
+			    <td class="tg-031e">Floirac, FRANCE</td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">04/14 - 07/14</td>
+			    <td class="tg-031e">3 mois et demi</td>
+			    <td class="tg-031e">CDD</td>
+			    <td class="tg-031e">Ouvrière agricole</td>
+			    <td class="tg-031e"><a href="http://www.chateaudelagrave.com/">Chateau de la Grave</a></td>
+			    <td class="tg-031e">Bourg sur Gironde, FRANCE</td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">09/13 - 04/14</td>
+			    <td class="tg-031e">7 mois</td>
+			    <td class="tg-031e">CDD</td>
+			    <td class="tg-031e">Garde d'enfants</td>
+			    <td class="tg-031e"><a href="http://www.societe.com/societe/roi-des-services-534133624.html">Roi des Services</a></td>
+			    <td class="tg-031e">Bordeaux, FRANCE</td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">04/13 - 07/13</td>
+			    <td class="tg-031e">3 mois et demi</td>
+			    <td class="tg-031e">CDD</td>
+			    <td class="tg-031e">Ouvrière agricole</td>
+			    <td class="tg-031e"><a href="http://www.chateaudelagrave.com/">Chateau de la Grave</a></td>
+			    <td class="tg-031e">Bourg sur Gironde, FRANCE</td>
+			  </tr>
+			</table>
+		</div>
+	</section>
 
+	<section id="projets">
+		<div class="container">
+			<h1 id="Bureautique">Projets</h1>
+			<br>
+			<h3>Informatique</h3>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="panel-1">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-1" href="#panel-element-1">
+								 	Site de matchmaking d'équipes/utilisateurs pour les inscriptions au Bordeaux Geek Festival 2016
+								 </a>
+							</div>
+							<div id="panel-element-1" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<center>
+										<img src="{{ asset('bundles/cvsite/images/projets/sitebgf.png') }}" />
+										<br>
+										<h3>Site actuellement en cours de création</h3>
+										<br>
+										<h4>Framework = Symfony </h4> 
+										<br>
+										<p>
+											La plateforme permet à un utilisateur de s'inscrire, de créer/rejoindre une équipe, avec un systeme de gestion de joueurs et de candidature.
+										</p>
+										<br>
+										<br>
+										<a href="https://github.com/Mehyo/abgg-symfony">
+											► Retrouver le code sur GitHub ◄
+										</a>
+									</center>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-2" href="#panel-element-2">
+								 	Site internet de l'Association Bordelaise des Geeks et Gamers
+								 </a>
+							</div>
+							<div id="panel-element-2" class="panel-collapse collapse">
+								<div class="panel-body">
+									<center>
+										<a href="http://asso-b2g.com/">
+										<img src="{{ asset('bundles/cvsite/images/projets/siteab2g.png') }}" />
+										</a>
+										<br>
+										<h3>Site actuellement en cours de création</h3>
+										<br>
+										<h4>Framework = Symfony</h4> 
+										<br>
+										<p>
+											La plateforme permet à un utilisateur de s'inscrire, de créer/rejoindre une équipe, pour la Label[i] Gaming Championship.
+										</p>
+										<br>
+										<a href="https://github.com/NanaRT/AssoB2G">
+											► Retrouver le code sur GitHub ◄
+										</a>
+									</center>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-3" href="#panel-element-3">
+									Site de la Label[i] Gaming Championship
+								 </a>
+							</div>
+							<div id="panel-element-3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<center>
+										<h3>Site actuellement en cours de création</h3>
+										<br>
+										<h4>Framework = Symfony </h4> 
+										<br>
+										<p>
+											Site de l'Association Bordelaise des Geeks et Gamers
+										</p>
+										<br>
+									</center>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-4" href="#panel-element-4">
+									Candy Crush en Ascii sur Console (Windows)
+								 </a>
+							</div>
+							<div id="panel-element-4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<center>
+										<img src="{{ asset('bundles/cvsite/images/projets/cascii.png') }}" />
+										<br>
+										<h3>Jeux actuellement en cours de création</h3>
+										<br>
+										<h4>IDE = Visual Studio </h4> 
+										<h4>Langage = C </h4> 
+										<br>
+										<p>
+											Un Candy Crush en  C utilisant uniquement des caractères de la table Ascii et les couleurs proposées par la console.
+										</p>
+										<br>
+										<br>
+										<a href="https://github.com/NanaRT/CandyCrushAsciiC">
+											► Retrouver le code sur GitHub ◄
+										</a>
+									</center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h3>Associatif/Evénements/Salons</h3>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel-group" id="panel-1">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-a" href="#panel-element-a">
+								 	Tournoi League of Legends sur le Bordeaux Geek Festival Mai 2015
+								 </a>
+							</div>
+							<div id="panel-element-a" class="panel-collapse collapse in">
+								<div class="panel-body">
+								<div class="carousel slide" id="carousel-44986">
+									<ol class="carousel-indicators">
+										<li class="active" data-slide-to="0" data-target="#carousel-44986">
+										</li>
+										<li data-slide-to="1" data-target="#carousel-44986">
+										</li>
+										<li data-slide-to="2" data-target="#carousel-44986">
+										</li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="item active">
+											<center>
+												<img alt="Carousel Bootstrap First" src="{{ asset('bundles/cvsite/images/projets/bgf/all.jpg') }}" />
+											</center>
+										</div>
+										<div class="item">
+											<center>
+												<img alt="Carousel Bootstrap Second" src="{{ asset('bundles/cvsite/images/projets/bgf/view.jpg') }}" />
+											</center>
+										</div>
+										<div class="item">
+											<center>
+												<img alt="Carousel Bootstrap Third" src="{{ asset('bundles/cvsite/images/projets/logobgf.jpg') }}" />
+											</center>
+										</div>
+									</div> <a class="left carousel-control" href="#carousel-44986" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-44986" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+								</div>
+									<center>
+										<br>
+										<h3>Bordeaux Geek Festival League of Legends Tournament</h3>
+										<br>
+										<h4>Dates = 13 au 17 mai 2015 </h4> 
+										<br>
+										<p>
+											Création/gestion/organisation du tournoi League of Legends sur le Bordeaux Geek Festival
+										</p>
+										<br>
+										<br>
+										<a href="https://www.facebook.com/bgflt/?fref=ts">
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="https://twitter.com/BGFesport">
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="https://plus.google.com/u/0/117337977924057660726/posts">
+											<i class="fa fa-google-plus"></i>
+										</a>
+										<a href="https://www.instagram.com/bgf_es/">
+											<i class="fa fa-instagram"></i>
+										</a>
+										<a href="https://www.youtube.com/channel/UCK89jXECqJ86Ag1DFbFP3EA">
+											<i class="fa fa-youtube"></i>
+										</a>
+									</center>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-b" href="#panel-element-b">
+								 	Création et présidence de l'Association Borderlaise des Geeks et Gamers [AB2G]
+								 </a>
+							</div>
+							<div id="panel-element-b" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-6">
+											<img src="{{ asset('bundles/cvsite/images/projets/ab2g.jpg') }}" />
+										</div>
+										<div class="col-md-6">
+											<center>
+												<h3>Création et gestion de l'Association Bordelaise des Geeks et Gamers</h3>
+												<br>
+												<p>
+													Création/gestion/organisation d'événements lié au jeu vidéo sur la région bordelaise
+												</p>
+												<br> 
+											</center>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-c" href="#panel-element-c">
+								 	Participation à de nombreux salons en tant qu'Hotesse
+								 </a>
+							</div>
+							<div id="panel-element-c" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="carousel slide" id="carousel-348534">
+										<ol class="carousel-indicators">
+											<li class="active" data-slide-to="0" data-target="#carousel-348534">
+											</li>
+											<li data-slide-to="1" data-target="#carousel-348534">
+											</li>
+											<li data-slide-to="2" data-target="#carousel-348534">
+											</li>
+											<li data-slide-to="3" data-target="#carousel-348534">
+											</li>
+											<li data-slide-to="4" data-target="#carousel-348534">
+											</li>
+											<li data-slide-to="5" data-target="#carousel-348534">
+											</li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="item active">
+												<center>
+													<img alt="Carousel Bootstrap First" src="{{ asset('bundles/cvsite/images/projets/animasia2014.jpg') }}" />
+												</center>
+												<div class="carousel-caption">
+													<h4>
+														Animasia 2014
+													</h4>
+													<p>
+														Sur le stand de l'école EPSI, accueil, renseignements et organisation des journées.
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<center>
+													<img alt="Carousel Bootstrap Second" src="{{ asset('bundles/cvsite/images/projets/dn04.jpg') }}" />
+												</center>
+												<div class="carousel-caption">
+													<h4>
+														Destinées Numériques 2014
+													</h4>
+													<p>
+														Accueil des invités
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<center>
+													<img alt="Carousel Bootstrap Third" src="{{ asset('bundles/cvsite/images/projets/aquitec.jpg') }}" />
+												</center>
+												<div class="carousel-caption">
+													<h4>
+														Aquitec 2015
+													</h4>
+													<p>
+														Présentation de l'école et du cursus EPSI.
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<center>
+													<img alt="Carousel Bootstrap Fourth" src="{{ asset('bundles/cvsite/images/projets/salonetu.jpg') }}" />
+												</center>
+												<div class="carousel-caption">
+													<h4>
+														Salon de l'étudiant 2015
+													</h4>
+													<p>
+														Présentation de l'école et du cursus EPSI.
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<center>
+													<img alt="Carousel Bootstrap Fifth" src="{{ asset('bundles/cvsite/images/projets/jpo2015.jpg') }}" />
+												</center>
+												<div class="carousel-caption">
+													<h4>
+														Journée Portes Ouvertes Campus 2015
+													</h4>
+													<p>
+														Présentation et visite du campus pour tous les visiteurs.
+													</p>
+												</div>
+											</div>
+											<div class="item">
+												<center>
+													<img alt="Carousel Bootstrap Sixth" src="{{ asset('bundles/cvsite/images/projets/sial.jpg') }}" />
+												</center>
+												<div class="carousel-caption">
+													<h4>
+														Salon International de l'Agro-Alimentaire 2012
+													</h4>
+													<p>
+														Hotesse au Salon Internation de l'Agro-Alimentaire à Paris pour la société Elite Naturel.
+													</p>
+												</div>
+											</div>
+										</div> <a class="left carousel-control" href="#carousel-348534" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-348534" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="bureautique" class="darker">
+		<div class="container">
+			<h1 id="Bureautique">Bureautique</h1>
+			<table class="table table-hover">
+			  <tr>
+			    <th class="tg-031e">Type de compétence</th>
+			    <th class="tg-031e">Logiciels maitrisés/étudiés</th>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Traitement de texte</td>
+			    <td class="tg-031e">
+					<abbr title="Word">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/word.png') }}" alt="Word" class="img-thumbnail"/> 
+					</abbr>
+					<abbr title="LibreOffice">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/libreoffice.png') }}" alt="Libre Office" class="img-thumbnail"/> 
+					</abbr>
+					<abbr title="OpenOffice">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/openoffice.png') }}" alt="Open Office" class="img-thumbnail"/> 
+					</abbr>
+				</td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Traitement image</td>
+			    <td class="tg-031e">
+					<abbr title="Paint">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/paint.png') }}" alt="Paint.net" class="img-thumbnail"/> 
+					</abbr>
+					<abbr title="Picasa">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/picasa.png') }}" alt="Picasa" class="img-thumbnail"/> 
+					</abbr>
+					<abbr title="Gimp">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/gimp.png') }}" alt="Gimp" class="img-thumbnail"/> 
+					</abbr>
+					<abbr title="Photoshop">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/photoshop.png') }}" alt="Photoshop" class="img-thumbnail"/> 
+					</abbr>
+				</td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Traitement vidéo</td>
+			    <td class="tg-031e">
+					<abbr title="PowerDirector">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/powerdirector.png') }}" alt="Power Director" class="img-thumbnail"/> 
+					</abbr>
+					<abbr title="Windows Movie Maker">
+						<img src="{{ asset('bundles/cvsite/images/bureautique/windowsmoviemaker.png') }}" alt="Windows Movie Maker" class="img-thumbnail"/>
+					</abbr>
+					<abbr title="Sony Vegas Pro"> 
+						<img src="{{ asset('bundles/cvsite/images/bureautique/sonyvegaspro.png') }}" alt="Sony Vegas Pro" class="img-thumbnail"/> 
+					</abbr>
+				</td>
+			  </tr>
+			</table>
+		</div>
+	</section>
+	<section id="loisirs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 id="Loisirs">Loisirs</h1>
+					<div class="tabbable" id="tabs-12762">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#panel-1" data-toggle="tab"><i class="fa fa-gamepad"></i> Jeux vidéos</a>
+							</li>
+							<li>
+								<a href="#panel-2" data-toggle="tab"><i class="fa fa-film"></i> Films d'animation</a>
+							</li>
+							<li>
+								<a href="#panel-3" data-toggle="tab"><i class="fa fa-book"></i> Mangas</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane active" id="panel-1">
+							<table class="table table-hover" id="videogames">
+							    <tr>
+							    	<td>
+										<abbr title="Batman Arkham Asylum">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/baa.png') }}" alt="Batman Arkham Asylum" class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Batman Arkham City">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/bac.png') }}" alt="Batman Arkham City" class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Batman Arkham Origins">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/bao.png') }}" alt="Batman Arkham Origins"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Batman Arkham Knight">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/bak.png') }}" alt="Batman Arkham Knight"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Super Mario Galaxy">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/smg.png') }}" alt="Super Mario Galaxy"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Super Mario Galaxy 2">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/smg2.png') }}" alt="Super Mario Galaxy 2"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    </tr>
+							    <tr>
+							    	<td>
+										<abbr title="Final Fantasy III">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffiii.png') }}" alt="Final Fantasy III""  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Final Fantasy X">	
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffx.png') }}" alt="Final Fantasy X""  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Final Fantasy XIII">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffxiii.png') }}" alt="Final Fantasy XIII""  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Final Fantasy XIII-2">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffxiii2.png') }}" alt="Final Fantasy  XIII-2""  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Lightning Returns">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/lr.png') }}" alt="Lightning Returns"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    </tr>
+							</table>
+						</div>
+						<div class="tab-pane" id="panel-2">
+							<table class="table table-hover" id="animation">
+							    <tr>
+							    	<td>
+										<abbr title="Disney">
+							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/disney.png') }}" alt="Disney" class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="DreamWorks">
+							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/dreamworks.png') }}" alt="DreamWorks" class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Pixar">
+							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/pixar.png') }}" alt="Pixar"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Blue Sky">
+							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/bluesky.png') }}" alt="Blue Sky"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    </tr>
+							</table>
+						</div>
+						<div class="tab-pane" id="panel-3">
+							<table class="table table-hover" id="mangas">
+							    <tr>
+							    	<td>
+										<abbr title="Fruit Basket">
+							    			<img src="{{ asset('bundles/cvsite/images/mangas/fruitbasket.png') }}" alt="Fruit Basket" class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Black Bird">
+							    			<img src="{{ asset('bundles/cvsite/images/mangas/bbird.png') }}" alt="Black Bird" class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Black Butler">
+							    			<img src="{{ asset('bundles/cvsite/images/mangas/blackbutler.png') }}" alt="Black Butler"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Chocolat et Vanilla">
+							    			<img src="{{ asset('bundles/cvsite/images/mangas/cetv.png') }}" alt="Chocolat et Vanilla"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Pandora Heart">
+							    			<img src="{{ asset('bundles/cvsite/images/mangas/ph.png') }}" alt="Pandora Heart"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    	<td>
+							    	</td>
+							    </tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Portfolio section end -->
+	<!-- Contact section start -->
+	<section id="contact" class="darker">
+		<div class="container">
+			<header>
+				<h2>Contact</h2>
+				<p>
+					
+				</p>
+			</header>
+			<div class="row">
+				<div class="col-md-8">
+					<form class="row">
+						<div class="form-group col-md-6">
+							<input name="name" type="text" placeholder="Nom" class="form-control" />
+						</div>
+						<div class="form-group col-md-6">
+							<input name="mail" type="email" placeholder="Email" class="form-control" />
+						</div>
+						<div class="form-group col-md-12">
+							<input name="subject" type="text" placeholder="Object" class="form-control" />
+						</div>
+						<div class="form-group col-md-12">
+							<textarea name="message" class="form-control" rows="10" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group col-md-12">
+							<button class="btn btn-lg btn-primary">Envoyer</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<address>
+						<span>Adresse</span>
+						<p>
+							Alana TAYLOR<br>
+							22 rue Lafontaine<br>
+							33 800 Bordeaux<br>
+							FRANCE
+						</p>
+					</address>
+					<address>
+						<span>Email</span>
+						<p>alanataylor@hotmail.fr</p>
+					</address>
+					<address>
+						<span>Téléphone</span>
+						<p>+33 668 21 24 42</p>
+					</address>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<p>&copy; 2015 Template by <a href="http://graphberry.com" target="_blank">GraphBerry</a></p>
+				</div>
+				<div class="col-md-4">
+					<ul class="social-icons">
+						<li><a href="https://www.linkedin.com/in/alanarosetaylor"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/NanaRT"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end  -->
+
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="{{ asset('bundles/cvsite/js/jquery-1.11.2.min.js') }}"></script>
+
+	<!-- Load Booststrap -->
+	<script type="text/javascript" src="{{ asset('bundles/cvsite/js/bootstrap.js') }}"></script>
+
+	<script type="text/javascript" src="{{ asset('bundles/cvsite/js/smooth-scroll.js') }}"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<!-- Load custom js for theme -->
+	<script type="text/javascript" src="{{ asset('bundles/cvsite/js/app.js') }}"></script>
 </body>
+</html>
