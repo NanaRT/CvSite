@@ -9,23 +9,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alana Rose TAYLOR</title>
+	<link rel="icon" href="http://sendpictures.free.fr/up/1412245903.ico"/>
+	<title> Alana Rose Taylor - Développement Web</title>
 
 	<!-- Load fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 
 	<!-- Load css styles -->
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css"> 
 	<link rel="stylesheet" href="{{ asset('bundles/cvsite/css/bootstrap.css') }}" />
 	<link rel="stylesheet" href="{{ asset('bundles/cvsite/css/font-awesome.css') }}" />
 	<link rel="stylesheet" href="{{ asset('bundles/cvsite/css/style.css') }}" />
 </head>
 <body>
 	<div class="jumbotron home home-fullscreen" id="home">
-		<div class="mask"></div>
-		<a href="#" class="logo">
-			<img src="{{ asset('bundles/cvsite/img/logo.png') }}" alt="Moderno - Theme by GraphBerry.com">
-		</a>
+		<div class="mask" id="top"></div>
 		<a href="#menu" class="menu-toggle" id="nav-expander"><i class="fa fa-bars"></i></a>
 		<!-- Offsite navigation -->
 		<nav class="menu">
@@ -34,22 +33,22 @@
 			<ul class="nav">
 				<li class="active"><a data-scroll href="#competences">Compétences</a></li>
 				<li><a data-scroll href="#formation">Formation</a></li>
-				<li><a data-scroll href="#experiencepro">Expérience professionelle</a></li>
+				<li><a data-scroll href="#professionel">Expérience professionelle</a></li>
 				<li><a data-scroll href="#projets">Projets</a></li>
 				<li><a data-scroll href="#bureautique">Bureautique</a></li>
 				<li><a data-scroll href="#loisirs">Loisirs</a></li>
 				<li><a data-scroll href="#contact">Contact</a></li>
 			</ul>
 			<ul class="social-icons">
-				<li><a href="https://www.linkedin.com/in/alanarosetaylor"><i class="fa fa-linkedin"></i></a></li>
-				<li><a href="https://github.com/NanaRT"><i class="fa fa-github"></i></a></li>
+				<li><a onclick="window.open ('https://www.linkedin.com/in/alanarosetaylor', ''); return false" href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+				<li><a onclick="window.open ('https://github.com/NanaRT', ''); return false" href="javascript:void(0);"><i class="fa fa-github"></i></a></li>
 			</ul>
 			<ul class="footer">
 				<li>Alana TAYLOR</li>
 				<li>Bordeaux, FRANCE<br/> </li>
 				<li><abbr title="Téléphone">T:</abbr> +33 6 68 21 24 42<br/> </li>
 				<li><abbr title="Mail">M:</abbr> alanataylor@hotmail.fr<br/></li>
-				<br><br>
+				<li></li>
 				<li>Double nationalité : franco-néo-zélandaise</li>
 				<li><img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="France" class="img-thumbnail"/>     
 				<img src="{{ asset('bundles/cvsite/images/new_zealand.png') }}" alt="Nouvelle Zélande" class="img-thumbnail"/></li>
@@ -58,10 +57,11 @@
 		<div class="container">
 			<div class="header-info">
 				<h1>Alana Rose TAYLOR</h1>
-				<br><h2>Developpeuse web</2>
-				<br><p>Etudiante en Licence 2 à l'Université de Bordeaux en informatique
-				</p><br>
-				<a href="{{ path('telechargementCvPdf') }}" class="btn btn-primary"><i class="fa fa-download"></i>Télécharger version papier</a>
+				<br><h2>Recherche contrat de Professionalisation dans le Développement Web</h2>
+				<br><h3>Disponible dès Juin 2016</h3>
+				<br><p>Etudiante en Licence 2 à l'Université de Bordeaux en informatique</p>
+				<br>
+				<a href="{{ path('telechargementCvPdf') }}" class="btn btn-primary"><i class="fa fa-download"></i>Télécharger version papier (131 ko)</a>
 			</div>
 		</div>
 	</div>
@@ -69,46 +69,46 @@
 	<section id="services">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="service-item">
-						<div class="icon">
-							<a href='#compétences'>
+						<a href='#competences'>
+							<div class="icon">
 								<i class="fa fa-list"></i>
-							</a>
-						</div>
+							</div>
+						</a>
 						<h3>Compétences</h3>
 						<p>Liste de compétences acquises ou en cours d'acquisition</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="service-item">
-						<div class="icon">
-							<a href='#formation'>
+						<a href='#formation'>
+							<div class="icon">
 								<i class="fa fa-book"></i>
-							</a>
-						</div>
+							</div>
+						</a>
 						<h3>Formation suivie</h3>
 						<p> Liste des écoles et cursus suivis</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="service-item">
-						<div class="icon">
-							<a href='#professionel'>
+						<a href='#professionel'>
+							<div class="icon">
 								<i class="fa fa-gear"></i>
-							</a>
-						</div>
+							</div>
+						</a>
 						<h3>Experience professionelle</h3>
 						<p>Liste des experiences professionelles</p>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="service-item">
-						<div class="icon">
-							<a href='#projets'>
+						<a href='#projets'>
+							<div class="icon">
 								<i class="fa fa-life-ring"></i>
-							</a>
-						</div>
+							</div>
+						</a>
 						<h3>Projets</h3>
 						<p>Liste et description de tous les projets effectués ou en cours, informatique ou associatifs</p>
 					</div>
@@ -118,235 +118,243 @@
 	</section>
 	<!-- Services section end -->
 	<!-- Portfolio section start -->
-	<section id="compétences" class="darker">
+	<section id="competences" class="darker">
 		<div class="container">
 			<h1 id="Compétences">Compétences</h1>
-				<table class="table table-hover">
-			 		<tr>
-				    <th class="tg-031e">Type de compétences</th>
-				    <th class="tg-031e">Logiciels/langages</th>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Editeur de texte</td>
-				    <td class="tg-031e">
-				    	<abbr title="Notepad">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/notepad.png') }}" alt="Notepad++" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="PhpStorm">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/phpstorm.png') }}" alt="PhpStorm" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="Aptana">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/aptana.png') }}" alt="Aptana" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="Visual Studio">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/visual_studio.png') }}" alt="Visual Studio" class="img-thumbnail"/> 
-				    	</abbr>
-				    </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Web</td>
-				    <td class="tg-031e">
-				    	<abbr title="HTML">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/html.png') }}" alt="HTML" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="CSS">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/css.png') }}" alt="CSS" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="PHP">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/php.png') }}" alt="PHP" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="JavaScript">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/js.png') }}" alt="JavaScript" class="img-thumbnail"/>
-				    	</abbr>
-				    </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Framework</td>
-				    <td class="tg-031e">
-				    	<abbr title="Symfony">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/symfony.png') }}" alt="Symfony" class="img-thumbnail"/> 
-				    	</abbr>
-				    </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Base de données</td>
-				    <td class="tg-031e">
-				    	<abbr title="DBeaver">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/dbeaver.png') }}" alt="DBeaver" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="MySQL Workbench">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/MySQLWorkbench.png') }}" alt="MySQL Workbench" class="img-thumbnail"/>
-				    	</abbr>
-				    </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Langages orientés objets</td>
-				    <td class="tg-031e">
-				    	<abbr title="Python">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/python.png') }}" alt="Python" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="C">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/c.png') }}" alt="C" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="C#">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/csharp.png') }}" alt="CSharp" class="img-thumbnail"/> 
-				    	</abbr>
-				    </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Gestion de Version</td>
-				    <td class="tg-031e">
-				    	<abbr title="Retrouvez le code du site sur GitHub">
-				    		<a href="https://github.com/NanaRT/CvSite">
-				    			<img src="{{ asset('bundles/cvsite/images/logos/GitHub.png') }}" alt="GitHub" class="img-thumbnail"/> 
-				    		</a>
-				    	</abbr>
-				    	<abbr title="Git">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/git.png') }}" alt="git" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="SourceTree">
-				    		<img src="{{ asset('bundles/cvsite/images/logos/sourcetree.png') }}" alt="Source Tree" class="img-thumbnail"/> 
-				    	</abbr>
-				    </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Serveur</td>
-				    <td class="tg-031e">
-				    	<abbr title="WAMP">
-							<img src="{{ asset('bundles/cvsite/images/logos/Wamp.png') }}" alt="WAMP" class="img-thumbnail"/> 
-						</abbr>
-					</td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Systèmes d'exploitation utilisés</td>
-				    <td class="tg-031e">
-				    	<abbr title="Windows 7">
-							<img src="{{ asset('bundles/cvsite/images/logos/windows7.png') }}" alt="Windows 7" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="Windows 8">
-							<img src="{{ asset('bundles/cvsite/images/logos/windows8.png') }}" alt="Windows 8" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="Windows 10">
-							<img src="{{ asset('bundles/cvsite/images/logos/windows10.png') }}" alt="Windows 10" class="img-thumbnail"/> 
-						</abbr>
-					</td>
-				  </tr>
-				  <tr>
-				    <td class="tg-031e">Langues parlées niveau bilingue</td>
-				    <td class="tg-031e">
-				    	<abbr title="Français">
-							<img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="Français" class="img-thumbnail"/> 
-				    	</abbr>
-				    	<abbr title="Anglais">
-							<img src="{{ asset('bundles/cvsite/images/english.png') }}" alt="Anglais" class="img-thumbnail"/> 
-						</abbr>
-					</td>
-				  </tr>
-			</table>
+			<table class="table table-hover">
+		 		<tr>
+			    <th class="tg-031e">Type de compétences</th>
+			    <th class="tg-031e">Logiciels/langages</th>
+			    <td class="tg-031e">Framework</td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Web</td>
+			    <td class="tg-031e">
+			    	<abbr title="HTML">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/html.png') }}" alt="HTML" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="CSS">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/css.png') }}" alt="CSS" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="PHP">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/php.png') }}" alt="PHP" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="JavaScript">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/js.png') }}" alt="JavaScript" class="img-thumbnail"/>
+			    	</abbr>
+			    </td>
+			    <td class="tg-031e">
+			    	<abbr title="Symfony">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/symfony.png') }}" alt="Symfony" class="img-thumbnail"/> 
+			    	</abbr>
+			    </td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Base de données</td>
+			    <td class="tg-031e">
+			    	<abbr title="DBeaver">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/dbeaver.png') }}" alt="DBeaver" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="MySQL Workbench">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/MySQLWorkbench.png') }}" alt="MySQL Workbench" class="img-thumbnail"/>
+			    	</abbr>
+			    </td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Langages de programmation</td>
+			    <td class="tg-031e">
+			    	<abbr title="Python">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/python.png') }}" alt="Python" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="C">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/c.png') }}" alt="C" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="C#">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/csharp.png') }}" alt="CSharp" class="img-thumbnail"/> 
+			    	</abbr>
+			    </td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Editeur de code/IDE</td>
+			    <td class="tg-031e">
+			    	<abbr title="Notepad">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/notepad.png') }}" alt="Notepad++" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="PhpStorm">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/phpstorm.png') }}" alt="PhpStorm" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="Aptana">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/aptana.png') }}" alt="Aptana" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="Visual Studio">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/visual_studio.png') }}" alt="Visual Studio" class="img-thumbnail"/> 
+			    	</abbr>
+			    </td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Gestion de Version</td>
+			    <td class="tg-031e">
+			    	<abbr title="Retrouvez le code du site sur GitHub">
+			    		<a href="https://github.com/NanaRT/CvSite">
+			    			<img src="{{ asset('bundles/cvsite/images/logos/GitHub.png') }}" alt="GitHub" class="img-thumbnail"/> 
+			    		</a>
+			    	</abbr>
+			    	<abbr title="Git">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/git.png') }}" alt="git" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="SourceTree">
+			    		<img src="{{ asset('bundles/cvsite/images/logos/sourcetree.png') }}" alt="Source Tree" class="img-thumbnail"/> 
+			    	</abbr>
+			    </td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Serveur</td>
+			    <td class="tg-031e">
+			    	<abbr title="WAMP">
+						<img src="{{ asset('bundles/cvsite/images/logos/Wamp.png') }}" alt="WAMP" class="img-thumbnail"/> 
+					</abbr>
+				</td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Systèmes d'exploitation utilisés</td>
+			    <td class="tg-031e">
+			    	<abbr title="Windows 7">
+						<img src="{{ asset('bundles/cvsite/images/logos/windows7.png') }}" alt="Windows 7" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="Windows 8">
+						<img src="{{ asset('bundles/cvsite/images/logos/windows8.png') }}" alt="Windows 8" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="Windows 10">
+						<img src="{{ asset('bundles/cvsite/images/logos/windows10.png') }}" alt="Windows 10" class="img-thumbnail"/> 
+					</abbr>
+				</td>
+			    <td class="tg-031e"></td>
+			  </tr>
+			  <tr>
+			    <td class="tg-031e">Langues parlées niveau bilingue</td>
+			    <td class="tg-031e">
+			    	<abbr title="Français">
+						<img src="{{ asset('bundles/cvsite/images/france.png') }}" alt="Français" class="img-thumbnail"/> 
+			    	</abbr>
+			    	<abbr title="Anglais">
+						<img src="{{ asset('bundles/cvsite/images/english.png') }}" alt="Anglais" class="img-thumbnail"/> 
+					</abbr>
+				</td>
+			    <td class="tg-031e"></td>
+			  </tr>
+		</table>
 		</div>
 	</section>
 	<section id="formation">
 		<div class="container">
-			<h1 id="formation">Formation</h1>
-			<table class="table table-hover">
-			  <tr>
-			    <th class="tg-031e">Années</th>
-			    <th class="tg-031e">Centre formation</th>
-			    <th class="tg-031e">Lieu</th>
-			    <th class="tg-031e">Niveau d'étude</th>
-			    <th class="tg-031e">Diplôme obtenu</th>
-			    <th class="tg-031e">Mention obtenue</th>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">2015 - 2016</td>
-			    <td class="tg-031e">Université de Bordeaux, collège des sciences et technique</td>
-			    <td class="tg-031e">Talence, FRANCE</td>
-			    <td class="tg-031e">Bac+2</td>
-			    <td class="tg-031e"></td>
-			    <td class="tg-031e"></td>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">2014 - 2015</td>
-			    <td class="tg-031e">EPSI</td>
-			    <td class="tg-031e">Bordeaux, FRANCE</td>
-			    <td class="tg-031e">Bac+1</td>
-			    <td class="tg-031e"></td>
-			    <td class="tg-031e"></td>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">2010 - 2012</td>
-			    <td class="tg-031e">Lycée Sainte Marie Bastide</td>
-			    <td class="tg-031e">Bordeaux, FRANCE</td>
-			    <td class="tg-031e">Baccalauréat</td>
-			    <td class="tg-031e">Baccalauréat Littéraire</td>
-			    <td class="tg-031e">Bien</td>
-			  </tr>
-			</table>
+			<h1>Formation</h1>
+			<div class="table-responsive">
+				<table class="table table-hover">
+				  <tr>
+				    <th class="tg-031e">Années</th>
+				    <th class="tg-031e">Centre formation</th>
+				    <th class="tg-031e">Lieu</th>
+				    <th class="tg-031e">Niveau d'étude</th>
+				    <th class="tg-031e">Diplôme obtenu</th>
+				    <th class="tg-031e">Mention obtenue</th>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">2015 - 2016</td>
+				    <td class="tg-031e">Université de Bordeaux, collège des sciences et technique</td>
+				    <td class="tg-031e">Talence, FRANCE</td>
+				    <td class="tg-031e">Bac+2</td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">2014 - 2015</td>
+				    <td class="tg-031e">EPSI</td>
+				    <td class="tg-031e">Bordeaux, FRANCE</td>
+				    <td class="tg-031e">Bac+1</td>
+				    <td class="tg-031e"></td>
+				    <td class="tg-031e"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">2010 - 2012</td>
+				    <td class="tg-031e">Lycée Sainte Marie Bastide</td>
+				    <td class="tg-031e">Bordeaux, FRANCE</td>
+				    <td class="tg-031e">Baccalauréat</td>
+				    <td class="tg-031e">Baccalauréat Littéraire</td>
+				    <td class="tg-031e">Bien</td>
+				  </tr>
+				</table>
+			</div>
 		</div>
 	</section>	
 	<section id="professionel" class="darker">
 		<div class="container">
 			<h1 id="Professionel">Expérience professionelle</h1>
 			<br>
-			<table class="table table-hover">
-			  <tr>
-			    <th class="tg-031e">Années</th>
-			    <th class="tg-031e">Durée contrat</th>
-			    <th class="tg-031e">Type contrat</th>
-			    <th class="tg-031e">Emploi</th>
-			    <th class="tg-031e">Entreprise</th>
-			    <th class="tg-031e">Lieu</th>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">04/15 - 09/15</td>
-			    <td class="tg-031e">4 mois et demi</td>
-			    <td class="tg-031e">Stage</td>
-			    <td class="tg-031e">WebDeveloppeuse Symfony *</td>
-			    <td class="tg-031e"><a href="http://www.fabzat.com/fr/">Fabzat</a></td>
-			    <td class="tg-031e">Bègles, FRANCE</td>
-			  </tr>
-			  <tr>
-			  		* Création d’un outil de gestion de la production des commandes issues de différents canaux de distribution sur Symfony2 (avec le bundle Sonata Admin et l’API en RESTFul avec une authentification en OAuth V2)
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">08/14 - 09/14</td>
-			    <td class="tg-031e">1 mois et demi</td>
-			    <td class="tg-031e">CDD</td>
-			    <td class="tg-031e">Employée polyvalente</td>
-			    <td class="tg-031e"><a href="https://www.mcdonalds.fr/?gclid=CPSqofi2g8gCFUHnwgodL3gCiQ">Mac Donalds</a></td>
-			    <td class="tg-031e">Floirac, FRANCE</td>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">04/14 - 07/14</td>
-			    <td class="tg-031e">3 mois et demi</td>
-			    <td class="tg-031e">CDD</td>
-			    <td class="tg-031e">Ouvrière agricole</td>
-			    <td class="tg-031e"><a href="http://www.chateaudelagrave.com/">Chateau de la Grave</a></td>
-			    <td class="tg-031e">Bourg sur Gironde, FRANCE</td>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">09/13 - 04/14</td>
-			    <td class="tg-031e">7 mois</td>
-			    <td class="tg-031e">CDD</td>
-			    <td class="tg-031e">Garde d'enfants</td>
-			    <td class="tg-031e"><a href="http://www.societe.com/societe/roi-des-services-534133624.html">Roi des Services</a></td>
-			    <td class="tg-031e">Bordeaux, FRANCE</td>
-			  </tr>
-			  <tr>
-			    <td class="tg-031e">04/13 - 07/13</td>
-			    <td class="tg-031e">3 mois et demi</td>
-			    <td class="tg-031e">CDD</td>
-			    <td class="tg-031e">Ouvrière agricole</td>
-			    <td class="tg-031e"><a href="http://www.chateaudelagrave.com/">Chateau de la Grave</a></td>
-			    <td class="tg-031e">Bourg sur Gironde, FRANCE</td>
-			  </tr>
-			</table>
+			<p>* Création d’un outil de gestion de la production des commandes issues de différents canaux de distribution sur Symfony2 (avec le bundle Sonata Admin et l’API en RESTFul avec une authentification en OAuth V2)
+			</p>
+			<div class="table-responsive">
+				<table class="table table-hover">
+				  <tr>
+				    <th class="tg-031e">Années</th>
+				    <th class="tg-031e">Durée contrat</th>
+				    <th class="tg-031e">Type contrat</th>
+				    <th class="tg-031e">Emploi</th>
+				    <th class="tg-031e">Entreprise</th>
+				    <th class="tg-031e">Lieu</th>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">04/15 - 09/15</td>
+				    <td class="tg-031e">4 mois et demi</td>
+				    <td class="tg-031e">Stage</td>
+				    <td class="tg-031e">WebDeveloppeuse Symfony *</td>
+				    <td class="tg-031e"><a href="http://www.fabzat.com/fr/">Fabzat</a></td>
+				    <td class="tg-031e">Bègles, FRANCE</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">08/14 - 09/14</td>
+				    <td class="tg-031e">1 mois et demi</td>
+				    <td class="tg-031e">CDD</td>
+				    <td class="tg-031e">Employée polyvalente</td>
+				    <td class="tg-031e"><a href="https://www.mcdonalds.fr/?gclid=CPSqofi2g8gCFUHnwgodL3gCiQ">Mac Donalds</a></td>
+				    <td class="tg-031e">Floirac, FRANCE</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">04/14 - 07/14</td>
+				    <td class="tg-031e">3 mois et demi</td>
+				    <td class="tg-031e">CDD</td>
+				    <td class="tg-031e">Ouvrière agricole</td>
+				    <td class="tg-031e"><a href="http://www.chateaudelagrave.com/">Chateau de la Grave</a></td>
+				    <td class="tg-031e">Bourg sur Gironde, FRANCE</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">09/13 - 04/14</td>
+				    <td class="tg-031e">7 mois</td>
+				    <td class="tg-031e">CDD</td>
+				    <td class="tg-031e">Garde d'enfants</td>
+				    <td class="tg-031e"><a href="http://www.societe.com/societe/roi-des-services-534133624.html">Roi des Services</a></td>
+				    <td class="tg-031e">Bordeaux, FRANCE</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-031e">04/13 - 07/13</td>
+				    <td class="tg-031e">3 mois et demi</td>
+				    <td class="tg-031e">CDD</td>
+				    <td class="tg-031e">Ouvrière agricole</td>
+				    <td class="tg-031e"><a href="http://www.chateaudelagrave.com/">Chateau de la Grave</a></td>
+				    <td class="tg-031e">Bourg sur Gironde, FRANCE</td>
+				  </tr>
+				</table>
+			</div>
 		</div>
 	</section>
 
 	<section id="projets">
 		<div class="container">
-			<h1 id="Bureautique">Projets</h1>
+			<h1>Projets</h1>
 			<br>
 			<h3>Informatique</h3>
 			<div class="row">
@@ -361,7 +369,7 @@
 							<div id="panel-element-1" class="panel-collapse collapse in">
 								<div class="panel-body">
 									<center>
-										<img src="{{ asset('bundles/cvsite/images/projets/sitebgf.png') }}" />
+										<img width="100%" src="{{ asset('bundles/cvsite/images/projets/sitebgf.png') }}" />
 										<br>
 										<h3>Site actuellement en cours de création</h3>
 										<br>
@@ -463,7 +471,7 @@
 			<h3>Associatif/Evénements/Salons</h3>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="panel-group" id="panel-1">
+					<div class="panel-group" id="panel-5">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-a" href="#panel-element-a">
@@ -489,7 +497,7 @@
 										</div>
 										<div class="item">
 											<center>
-												<img alt="Carousel Bootstrap Second" src="{{ asset('bundles/cvsite/images/projets/bgf/view.jpg') }}" />
+												<img alt="Carousel Bootstrap Second" src="{{ asset('bundles/cvsite/images/projets/bgf/view.JPG') }}" />
 											</center>
 										</div>
 										<div class="item">
@@ -532,7 +540,7 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-b" href="#panel-element-b">
-								 	Création et présidence de l'Association Borderlaise des Geeks et Gamers [AB2G]
+								 	Création et présidence de l'Association Bordelaise des Geeks et Gamers [AB2G]
 								 </a>
 							</div>
 							<div id="panel-element-b" class="panel-collapse collapse">
@@ -670,7 +678,7 @@
 	
 	<section id="bureautique" class="darker">
 		<div class="container">
-			<h1 id="Bureautique">Bureautique</h1>
+			<h1>Bureautique</h1>
 			<table class="table table-hover">
 			  <tr>
 			    <th class="tg-031e">Type de compétence</th>
@@ -728,23 +736,23 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 id="Loisirs">Loisirs</h1>
-					<div class="tabbable" id="tabs-12762">
-						<ul class="nav nav-tabs">
-							<li class="active">
-								<a href="#panel-1" data-toggle="tab"><i class="fa fa-gamepad"></i> Jeux vidéos</a>
-							</li>
-							<li>
-								<a href="#panel-2" data-toggle="tab"><i class="fa fa-film"></i> Films d'animation</a>
-							</li>
-							<li>
-								<a href="#panel-3" data-toggle="tab"><i class="fa fa-book"></i> Mangas</a>
-							</li>
-						</ul>
-					</div>
-					<div class="tab-content">
-						<div class="tab-pane active" id="panel-1">
-							<table class="table table-hover" id="videogames">
+					<h1>Loisirs</h1>
+					<ul class="nav nav-tabs">
+						<li class="active">
+							<a href="#panel-1" data-toggle="tab"><i class="fa fa-gamepad"></i> Jeux vidéo</a>
+						</li>
+						<li>
+							<a href="#panel-2" data-toggle="tab"><i class="fa fa-film"></i> Films d'animation</a>
+						</li>
+						<li>
+							<a href="#panel-3" data-toggle="tab"><i class="fa fa-book"></i> Mangas</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div id="panel-5" class="tab-pane fade in active">
+						<table class="table table-hover" id="videogames">
+			        		<tbody>
 							    <tr>
 							    	<td>
 										<abbr title="Batman Arkham Asylum">
@@ -777,29 +785,35 @@
 							    		</abbr>
 							    	</td>
 							    	<td>
+										<abbr title="Bioshock">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/bio.png') }}" alt="Bioshock"  class="img-thumbnail"/> 
+							    		</abbr>
 							    	</td>
 							    	<td>
+										<abbr title="Bioshock 2">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/bio2.png') }}" alt="Bioshock 2"  class="img-thumbnail"/> 
+							    		</abbr>
 							    	</td>
 							    </tr>
 							    <tr>
 							    	<td>
 										<abbr title="Final Fantasy III">
-							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffiii.png') }}" alt="Final Fantasy III""  class="img-thumbnail"/> 
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffiii.png') }}" alt="Final Fantasy III"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
 										<abbr title="Final Fantasy X">	
-							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffx.png') }}" alt="Final Fantasy X""  class="img-thumbnail"/> 
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffx.png') }}" alt="Final Fantasy X"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
 										<abbr title="Final Fantasy XIII">
-							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffxiii.png') }}" alt="Final Fantasy XIII""  class="img-thumbnail"/> 
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffxiii.png') }}" alt="Final Fantasy XIII"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
 										<abbr title="Final Fantasy XIII-2">
-							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffxiii2.png') }}" alt="Final Fantasy  XIII-2""  class="img-thumbnail"/> 
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ffxiii2.png') }}" alt="Final Fantasy  XIII-2"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
@@ -808,81 +822,132 @@
 							    		</abbr>
 							    	</td>
 							    	<td>
+										<abbr title="Mario Kart Double Dash">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/mkdd.png') }}" alt="Mario Kart Double Dash"  class="img-thumbnail"/> 
+							    		</abbr>
 							    	</td>
 							    	<td>
+										<abbr title="Mario Kart Wii">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/mkwii.png') }}" alt="Mario Kart Wii"  class="img-thumbnail"/> 
+							    		</abbr>
 							    	</td>
 							    	<td>
+										<abbr title="Mario Kart 8">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/mk8.png') }}" alt="Mario Kart 8"  class="img-thumbnail"/> 
+							    		</abbr>
 							    	</td>
 							    </tr>
-							</table>
-						</div>
-						<div class="tab-pane" id="panel-2">
-							<table class="table table-hover" id="animation">
 							    <tr>
 							    	<td>
-										<abbr title="Disney">
-							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/disney.png') }}" alt="Disney" class="img-thumbnail"/> 
+										<abbr title="Heavy Rain">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/hr.png') }}" alt="Heavy Rain"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
-										<abbr title="DreamWorks">
-							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/dreamworks.png') }}" alt="DreamWorks" class="img-thumbnail"/> 
+										<abbr title="Halo">	
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/halo.png') }}" alt="Halo"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
-										<abbr title="Pixar">
-							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/pixar.png') }}" alt="Pixar"  class="img-thumbnail"/> 
+										<abbr title="Halo 2">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/halo2.png') }}" alt="Halo 2"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    	<td>
-										<abbr title="Blue Sky">
-							    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/bluesky.png') }}" alt="Blue Sky"  class="img-thumbnail"/> 
+										<abbr title="The Beatles Rock Band">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/tbrb.png') }}" alt="The Beatles Rock Band"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Rayman Origins">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/ro.png') }}" alt="Rayman Origins"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Rayman Legends">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/rl.png') }}" alt="Rayman Legends"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Kingdom Hearts II">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/kh2.png') }}" alt="Kingdom Hearts II"  class="img-thumbnail"/> 
+							    		</abbr>
+							    	</td>
+							    	<td>
+										<abbr title="Portal">
+							    			<img src="{{ asset('bundles/cvsite/images/jeuxvideos/port.png') }}" alt="Portal"  class="img-thumbnail"/> 
 							    		</abbr>
 							    	</td>
 							    </tr>
-							</table>
-						</div>
-						<div class="tab-pane" id="panel-3">
-							<table class="table table-hover" id="mangas">
-							    <tr>
-							    	<td>
-										<abbr title="Fruit Basket">
-							    			<img src="{{ asset('bundles/cvsite/images/mangas/fruitbasket.png') }}" alt="Fruit Basket" class="img-thumbnail"/> 
-							    		</abbr>
-							    	</td>
-							    	<td>
-										<abbr title="Black Bird">
-							    			<img src="{{ asset('bundles/cvsite/images/mangas/bbird.png') }}" alt="Black Bird" class="img-thumbnail"/> 
-							    		</abbr>
-							    	</td>
-							    	<td>
-										<abbr title="Black Butler">
-							    			<img src="{{ asset('bundles/cvsite/images/mangas/blackbutler.png') }}" alt="Black Butler"  class="img-thumbnail"/> 
-							    		</abbr>
-							    	</td>
-							    	<td>
-										<abbr title="Chocolat et Vanilla">
-							    			<img src="{{ asset('bundles/cvsite/images/mangas/cetv.png') }}" alt="Chocolat et Vanilla"  class="img-thumbnail"/> 
-							    		</abbr>
-							    	</td>
-							    	<td>
-										<abbr title="Pandora Heart">
-							    			<img src="{{ asset('bundles/cvsite/images/mangas/ph.png') }}" alt="Pandora Heart"  class="img-thumbnail"/> 
-							    		</abbr>
-							    	</td>
-							    	<td>
-							    	</td>
-							    	<td>
-							    	</td>
-							    	<td>
-							    	</td>
-							    	<td>
-							    	</td>
-							    	<td>
-							    	</td>
-							    </tr>
-							</table>
-						</div>
+							</tbody>
+						</table>
+					</div>
+					<div class="tab-pane fade" id="panel-2">
+						<table class="table table-hover" id="animation">
+						    <tr>
+						    	<td>
+									<abbr title="Disney">
+						    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/disney.png') }}" alt="Disney" class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="DreamWorks">
+						    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/dreamworks.png') }}" alt="DreamWorks" class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="Pixar">
+						    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/pixar.png') }}" alt="Pixar"  class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="Blue Sky">
+						    			<img src="{{ asset('bundles/cvsite/images/filmsanimation/bluesky.png') }}" alt="Blue Sky"  class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    </tr>
+						</table>
+					</div>
+					<div class="tab-pane fade" id="panel-3">
+						<table class="table table-hover" id="mangas">
+						    <tr>
+						    	<td>
+									<abbr title="Fruit Basket">
+						    			<img src="{{ asset('bundles/cvsite/images/mangas/fruitbasket.png') }}" alt="Fruit Basket" class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="Black Bird">
+						    			<img src="{{ asset('bundles/cvsite/images/mangas/bbird.png') }}" alt="Black Bird" class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="Black Butler">
+						    			<img src="{{ asset('bundles/cvsite/images/mangas/blackbutler.png') }}" alt="Black Butler"  class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="Chocolat et Vanilla">
+						    			<img src="{{ asset('bundles/cvsite/images/mangas/cetv.png') }}" alt="Chocolat et Vanilla"  class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+									<abbr title="Pandora Heart">
+						    			<img src="{{ asset('bundles/cvsite/images/mangas/ph.png') }}" alt="Pandora Heart"  class="img-thumbnail"/> 
+						    		</abbr>
+						    	</td>
+						    	<td>
+						    	</td>
+						    	<td>
+						    	</td>
+						    	<td>
+						    	</td>
+						    	<td>
+						    	</td>
+						    	<td>
+						    	</td>
+						    </tr>
+						</table>
 					</div>
 				</div>
 			</div>
@@ -958,7 +1023,10 @@
 			</div>
 		</div>
 	</footer>
-	<!-- Footer end  -->
+
+	<div class="up">
+		<a data-scroll href="#top" class="btn btn-primary" role="button"><i class="fa fa-arrow-up"></i></a>
+	</div>
 
 	<!-- Load jQuery -->
 	<script type="text/javascript" src="{{ asset('bundles/cvsite/js/jquery-1.11.2.min.js') }}"></script>

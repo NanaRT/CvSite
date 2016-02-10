@@ -455,7 +455,7 @@ ul.social-icons > li > a{
 }
 #videogames img
 {
-	width:auto;
+	width:100%;
 	height:auto;
 }
 
@@ -465,7 +465,7 @@ ul.social-icons > li > a{
 }
 #animation img
 {
-	width:auto;
+	width:100%;
 	height:auto;
 }
 
@@ -475,7 +475,7 @@ ul.social-icons > li > a{
 }
 #mangas img
 {
-	width:auto;
+	width:100%;
 	height:auto;
 }
 
@@ -490,4 +490,17 @@ ul.social-icons > li > a{
 .item p
 {
 	color:white;
+}
+
+.up
+{
+	background-color:white;
+	position:fixed;
+    left:0;
+    bottom:0;
+}
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.8px;
 }
